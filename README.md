@@ -1,73 +1,179 @@
-# Welcome to your Lovable project
+# 🌍 AccessRoute – Accessible Route Finder
 
-## Project info
+## 📌 Project Overview
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+AccessRoute is a web-based application designed to provide **accessible navigation** for people with disabilities.
+Unlike traditional navigation systems, it prioritizes **barrier-free routes** by considering ramps, elevators, smooth paths, and wheelchair-friendly accessibility.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🎯 Objectives
 
-**Use Lovable**
+* Provide **safe and accessible routes** for differently-abled users
+* Avoid obstacles like stairs and inaccessible paths
+* Improve independence and mobility for users
+* Demonstrate how technology can support inclusive navigation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Key Features
 
-**Use your preferred IDE**
+### ♿ Accessibility-First Routing
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* Routes are generated based on accessibility instead of shortest distance
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🚧 Barrier Avoidance
 
-Follow these steps:
+* Avoids stairs, steep slopes, and unsafe paths
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🗺️ Real-Time Map Integration
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+* Uses OpenStreetMap & OpenRouteService for real route visualization
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🔊 Voice Navigation
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+* Step-by-step voice guidance (Google Maps style)
+
+### ⚠️ Accessibility Issue Reporting
+
+* Users can report issues (e.g., broken ramps, inaccessible paths)
+
+### 📊 Accessibility Score
+
+* Each route is rated based on accessibility level
+
+### 📍 Use Current Location
+
+* Automatically detects user location using browser GPS
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React (TypeScript)
+* Vite
+* Tailwind CSS
+* ShadCN UI
+* Leaflet (Maps)
+
+### Backend
+
+* Python Flask
+* Flask-CORS
+
+### APIs Used
+
+* OpenRouteService API (routing & directions)
+* OpenStreetMap (map tiles)
+
+---
+
+## 🏗️ Project Structure
+
+```text
+accessroute-finder/
+│
+├── backend/
+│   ├── app.py
+│
+├── src/
+├── public/
+├── package.json
+├── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 🔹 1. Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/accessroute-finder.git
+cd accessroute-finder
+```
+
+---
+
+### 🔹 2. Run Backend
+
+```bash
+cd backend
+pip install flask flask-cors
+python app.py
+```
+
+---
+
+### 🔹 3. Run Frontend
+
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 🔹 4. Open in Browser
 
-**Use GitHub Codespaces**
+```text
+http://localhost:8080
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🧪 How It Works
 
-This project is built with:
+1. User enters **source and destination**
+2. System converts locations into coordinates (Geocoding)
+3. Route is generated using **OpenRouteService**
+4. Accessibility filters are applied
+5. Final route is displayed with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+   * Distance & time
+   * Accessibility features
+   * Step-by-step directions
+   * Voice navigation
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 📸 Screens (Optional)
 
-## Can I connect a custom domain to my Lovable project?
+* Home Page
+* Route Finder
+* Features Page
+* Voice Navigation
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🔮 Future Enhancements
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+* Real-time accessibility data from users
+* Live GPS tracking
+* AI-based route recommendations
+* Admin dashboard for issue management
+* Database integration for storing reports
+
+---
+
+## 👩‍💻 Team
+
+* N. Harshitha
+* D. Lathika Reddy
+
+Under the guidance of **V. Sravani**
+RGUKT RK Valley
+
+---
+
+## 🏆 Conclusion
+
+AccessRoute demonstrates how modern web technologies can be used to build **inclusive solutions** that improve accessibility and independence for people with disabilities.
+
+---
+
+## 📜 License
+
+This project is developed for academic purposes.
